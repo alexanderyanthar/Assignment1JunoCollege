@@ -1,0 +1,112 @@
+@use "./variables" as *;
+// New products section
+.newProducts {
+    background-color: $veryLightPink;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .newProductsText {
+        width: 70%;
+        padding-left: 2rem;
+    }
+
+    img {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    button {
+        background-color: $oceanBlue;
+    }
+}
+
+
+// latest exhibition section
+.latestExhibitions {
+    background-color: $lightPink;
+
+    .wrapper {
+        padding: 5rem 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0;
+        padding-bottom: 2rem;
+    }
+
+    ul {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: calc(33% - 1rem);
+            margin-right: 10px;
+        }
+    }
+}
+
+// icon section
+.iconLinks {
+    background-color: $veryLightPink;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        h3 {
+            padding: 5rem;
+
+            span {
+                    color: $oceanBlue;
+                    width: 100%;
+                    display: inline-block;
+                    margin-bottom: 1rem;
+
+                    i {
+                        color: $oceanBlue;
+                    }
+                }
+
+            
+        }
+    }
+}
+
+// right brushes section
+.rightBrushes {
+    background-color: $lightPink;
+
+    .topContainer,
+    .bottomContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            width: 50%;
+            padding: 0 5%;
+
+            button {
+                    background-color: $barneyPurple;
+                }
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+}

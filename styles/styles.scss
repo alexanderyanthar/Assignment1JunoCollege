@@ -1,0 +1,23 @@
+// Partials for styling on the website
+
+// 3. EXTRAS (for placement on github)
+    // a. add animations on icons
+    // b. Use JS for hamburger menu
+    // c. Make the latest exhibitions into a gallery of images
+    // d. make an about and blog page
+    // e. Add a catalogue page (to show paintings on sale? - can turn into a e-commerce site and sell designs), an event page(a calendar to see what's happening in the future), and a collaborations page to show companies that are partnered.
+    // f. Add the read more pages and link them to blogs/store fronts
+    // Make the form repsonsive
+@use "./partials/setup";
+@use "./partials/variables" as *;
+@use "./partials/genericStyling";
+@use "./partials/headerStyling";
+@use "./partials/_mainStyling";
+@use "./partials/footerSytling";
+@use "./partials/mediaQueries";
+
+
+// Questions for mentor
+// 1. Is there any part of my code that can be done better?
+// 2. How to align the image and text for new product on the shevles section so the top and bottom of the image line up with the top and bottom of the text while working with responsive design.
+// 2. How can I center my footer as it shows in the project example?

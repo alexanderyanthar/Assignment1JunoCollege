@@ -1,0 +1,106 @@
+@use "./variables" as *;
+// Generic styling
+html {
+    color: $dark;
+    font-size: 125%;
+    // got the idea from Michele over discord and used this link:
+    // https: //www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1
+    scroll-behavior: smooth;
+}
+
+body,
+nav {
+    font-family: $roboto;
+    letter-spacing: 0.01rem;
+    line-height: 1.45rem;
+}
+
+button {
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 1.45rem;
+    border: none;
+    color: white;
+    padding: 0.45rem 1rem;
+    // code for this underline transition is from here -- https: //css-irl.info/animating-underlines/
+
+    text-decoration: underline 0.05em rgba(255, 255, 255, 0);
+    transform-origin: center;
+    transition: text-decoration-color 200ms ease-in;
+    
+        &:hover,
+        &:focus {
+        text-decoration-color: rgb(255, 255, 255, 1);
+        cursor: pointer;
+        }
+}
+
+
+nav {
+    font-size: medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+button
+ {
+    font-family: $dokdo;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6.1rem;
+    line-height: 4.715rem;
+}
+
+h2 {
+    font-size: 3.75rem;
+    line-height: 1.8rem;
+}
+
+h3 {
+    font-size: 2.75rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.75rem;
+    line-height: 1.8rem;
+    text-align: right;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+        text-decoration: underline 0.15em rgba(32, 30, 33, 0);
+        transform-origin: center;
+        text-underline-offset: 0.3rem;
+        transition: text-decoration-color 200ms ease-in, text-underline-offset 300ms ease-in;
+
+        &:hover,
+        &:focus {
+            text-decoration-color: rgb(32, 30, 33, 1);
+            text-underline-offset: 0.3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}

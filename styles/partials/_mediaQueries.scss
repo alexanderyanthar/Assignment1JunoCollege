@@ -1,0 +1,233 @@
+@use "./variables" as *;
+
+@media (max-width: $tablet) {
+    // header styling
+    header {
+        background-position: 35% 50%;
+
+
+        .wrapper {
+            height: 60%;
+        }
+
+        h1 {
+            max-width: 20%;
+        }
+    }
+
+    // main styling
+    // new products section
+    .newProducts {
+        .wrapper {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                padding: 2rem 0;
+            }
+
+            .newProductsText {
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    align-self: center;
+                }
+            }
+
+        }
+    }
+
+    // icons section
+    .wrapper {
+        flex-direction: column;
+    }
+
+    // right brushes section
+    .rightBrushes {
+
+        .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem 0;
+                text-align: center;
+            }
+
+
+        .topContainer {
+            flex-direction: column-reverse;
+
+            .wrapper {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        
+        .bottomContainer {
+            flex-direction: column;
+
+            .wrapper {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // footer styling 
+    footer {
+
+        .wrapper {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                width: 100%;
+        
+                // footer nav styling
+                .footerNav {
+                    width: 100%;
+                    padding-top: 2rem;
+        
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+        
+                }
+        
+                // form styling
+                form {
+                    width: 100%;
+                    margin: 1rem 0;
+                    padding: 1rem 0;
+        
+                    .inputContainer {
+                        flex-direction: column;
+                        align-items: center;
+        
+                        [type=email] {
+                            text-align: center;
+                            margin: 0;
+                        }
+        
+                        button {
+                            margin-top: 1rem;
+                        }
+                    }
+                    
+                }
+        
+                // contact styling
+                .contact {
+                    width: 100%;
+                    padding-bottom: 1rem;
+        
+                    h4 {
+                        font-size: 55px;
+                    }
+        
+                    h4,
+                    ul {
+                        text-align: center;
+                    }
+                }
+            }
+            // copyright bar styling
+            .copyright p {
+                padding: 1rem;
+            }
+    }
+
+
+}
+
+@media (max-width: $phone) {
+    // generic stlying
+    // found solution to overflow horizontal scrolling on mobile here:
+    // https: //stackoverflow.com/questions/4192277/disable-horizontal-scroll-on-mobile-web
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+    // header styling
+    header {
+        height: 80vh;
+        background-size: cover;
+        background-position: 42% 50%;
+
+        .wrapper {
+            max-height: 50%;
+        }
+    
+
+        h1 {
+            font-size: 60px;
+            line-height: 46px;
+        }
+
+        .headerNav {
+            li {
+                display: none;
+            }
+
+            li:last-child {
+                transform: scale(1.5, 1);
+                color: white;
+                display: block;
+            }
+        }
+    }
+
+    // main styling
+    .latestExhibitions {
+        // make carousel
+
+        .wrapper {
+            padding: 3rem 0;
+
+            h2 {
+                line-height: 24px;
+            }
+        }
+
+        ul {
+            flex-wrap: wrap;
+            .img1,
+            .img2 {
+                width: calc(50% - 0.5rem);
+            }
+            .img3 {
+                display: none;
+            }
+        }
+    }
+
+    .rightBrushes {
+        h2 {
+            line-height: 36px;
+        }
+    }
+
+    // footer styling
+    footer {
+        .wrapper {
+            padding: 0.5rem;
+        }
+    }
+
+}

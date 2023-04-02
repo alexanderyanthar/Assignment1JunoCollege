@@ -1,0 +1,68 @@
+@use "./variables" as *;
+
+
+footer {
+    background-color: $veryLightPink;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 0;
+
+        .footerNav { 
+            ul {
+                padding: 0;
+            }
+        }
+
+        form {
+            width: 60%;
+            text-align: center;
+            margin-left: 10rem;
+
+            fieldset {
+                border: none;
+
+                .inputContainer {
+                    display: flex;
+
+                    button {
+                            background-color: $oceanBlue;
+                        }
+
+                    [type=email] {
+                        border: none;
+                        padding: 0.5rem 2rem;
+                        width: 100%;
+                    }
+
+                    input::placeholder {
+                        opacity: 0.5;
+                    }
+   
+                }
+
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .contact {
+            width: 33%;
+
+            ul {
+                    padding: 5px;
+                    text-align: right;
+                }
+        }
+    }
+
+    .copyright p {
+        margin: 0;
+        color: white;
+        background-color: $dark;
+        text-align: center;
+    }
+}
