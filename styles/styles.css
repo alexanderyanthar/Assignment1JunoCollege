@@ -401,16 +401,14 @@ header .brandIcons a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 .newProducts .newProductsText {
   width: 70%;
   padding-left: 2rem;
 }
-.newProducts img {
+.newProducts .imgContainer {
   width: 30%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .newProducts h2 {
   margin: 0;
@@ -551,15 +549,21 @@ footer .copyright p {
   }
   .newProducts .wrapper {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .newProducts .wrapper img {
+  .newProducts .wrapper .imgContainer {
     width: 100%;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
+  }
+  .newProducts .wrapper .imgContainer img {
+    width: 100%;
   }
   .newProducts .wrapper .newProductsText {
-    padding-left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 0;
   }
   .newProducts .wrapper .newProductsText button {
     align-self: center;
