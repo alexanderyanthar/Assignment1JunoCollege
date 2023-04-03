@@ -22,14 +22,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 3rem 0;
 
-            .imgContainer {
+            img {
                 width: 100%;
                 padding-bottom: 2rem;
-
-                img {
-                    width: 100%;
-                }
+            }
             }
 
             .newProductsText {
@@ -153,7 +151,6 @@
     }
 
 
-}
 
 @media (max-width: $phone) {
     // generic stlying

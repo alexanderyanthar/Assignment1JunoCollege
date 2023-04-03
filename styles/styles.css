@@ -407,7 +407,7 @@ header .brandIcons a {
   width: 70%;
   padding-left: 2rem;
 }
-.newProducts .imgContainer {
+.newProducts img {
   width: 30%;
 }
 .newProducts h2 {
@@ -551,96 +551,97 @@ footer .copyright p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
   }
-  .newProducts .wrapper .imgContainer {
+  .newProducts .wrapper img {
     width: 100%;
     padding-bottom: 2rem;
   }
-  .newProducts .wrapper .imgContainer img {
-    width: 100%;
-  }
-  .newProducts .wrapper .newProductsText {
+  .newProducts .newProductsText {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 0;
   }
-  .newProducts .wrapper .newProductsText button {
+  .newProducts .newProductsText button {
     align-self: center;
   }
-  .wrapper {
-    flex-direction: column;
-  }
-  .rightBrushes .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    text-align: center;
-  }
-  .rightBrushes .topContainer {
-    flex-direction: column-reverse;
-  }
-  .rightBrushes .topContainer .wrapper {
-    width: 100%;
-  }
-  .rightBrushes .topContainer img {
-    width: 100%;
-  }
-  .rightBrushes .bottomContainer {
-    flex-direction: column;
-  }
-  .rightBrushes .bottomContainer .wrapper {
-    width: 100%;
-  }
-  .rightBrushes .bottomContainer img {
-    width: 100%;
-  }
-  footer .wrapper {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-  }
-  footer .wrapper .footerNav {
-    width: 100%;
-    padding-top: 2rem;
-  }
-  footer .wrapper .footerNav ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  footer .wrapper form {
-    width: 100%;
-    margin: 1rem 0;
-    padding: 1rem 0;
-  }
-  footer .wrapper form .inputContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .wrapper form .inputContainer [type=email] {
-    text-align: center;
-    margin: 0;
-  }
-  footer .wrapper form .inputContainer button {
-    margin-top: 1rem;
-  }
-  footer .wrapper .contact {
-    width: 100%;
-    padding-bottom: 1rem;
-  }
-  footer .wrapper .contact h4 {
-    font-size: 55px;
-  }
-  footer .wrapper .contact h4,
-  footer .wrapper .contact ul {
-    text-align: center;
-  }
-  footer .copyright p {
-    padding: 1rem;
-  }
 }
+.wrapper {
+  flex-direction: column;
+}
+
+.rightBrushes .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+.rightBrushes .topContainer {
+  flex-direction: column-reverse;
+}
+.rightBrushes .topContainer .wrapper {
+  width: 100%;
+}
+.rightBrushes .topContainer img {
+  width: 100%;
+}
+.rightBrushes .bottomContainer {
+  flex-direction: column;
+}
+.rightBrushes .bottomContainer .wrapper {
+  width: 100%;
+}
+.rightBrushes .bottomContainer img {
+  width: 100%;
+}
+
+footer .wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+footer .wrapper .footerNav {
+  width: 100%;
+  padding-top: 2rem;
+}
+footer .wrapper .footerNav ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper form {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+footer .wrapper form .inputContainer {
+  flex-direction: column;
+  align-items: center;
+}
+footer .wrapper form .inputContainer [type=email] {
+  text-align: center;
+  margin: 0;
+}
+footer .wrapper form .inputContainer button {
+  margin-top: 1rem;
+}
+footer .wrapper .contact {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+footer .wrapper .contact h4 {
+  font-size: 55px;
+}
+footer .wrapper .contact h4,
+footer .wrapper .contact ul {
+  text-align: center;
+}
+footer .copyright p {
+  padding: 1rem;
+}
+
 @media (max-width: 360px) {
   html,
   body {
