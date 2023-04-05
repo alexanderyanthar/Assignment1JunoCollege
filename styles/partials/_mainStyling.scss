@@ -5,18 +5,17 @@
 
     .wrapper {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
-        padding: 3rem 2rem;
+        padding: 3rem 0;
     }
 
     .newProductsText {
-        width: 70%;
+        width: 75%;
         padding-left: 2rem;
     }
 
-    img {
-        width: 30%;
+    .imgContainer {
+        width: 25%;
     }
 
     h2 {
