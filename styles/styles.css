@@ -355,7 +355,7 @@ ul a:hover, ul a:focus {
 }
 
 header {
-  background-image: url(../../assets/group-4@2x.png);
+  background-image: url(../assets/group-4@2x.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
